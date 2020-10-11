@@ -152,7 +152,7 @@ class CheckMapDialog(bpy.types.Operator):
     if result["light"] == 0:
       error = True
 
-      layout.label(text="There is no light in the map you need at least one light.", icon='CANCEL')
+      layout.label(text="There is no light in the map, you need at least one light.", icon='CANCEL')
       layout.separator()
     elif result["light"] > 5:
       self.light = result["light"]

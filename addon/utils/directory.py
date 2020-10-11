@@ -58,7 +58,7 @@ def browse(
 
 
 def dictTransformKeys(data, prefix=""):
-  """Convert dictionary keys to as single string"""
+  """Convert dictionary keys to a single string"""
   values = {}
   for k, v in data.items():
     if prefix and not prefix.endswith("/"):

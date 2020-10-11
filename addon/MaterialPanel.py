@@ -84,7 +84,6 @@ class MaterialPanel(bpy.types.Panel):
 
   @classmethod
   def poll(cls, context):
-    # MPItemIdUpdate(self, context)
     return True
 
   def draw(self, context):
@@ -94,9 +93,6 @@ class MaterialPanel(bpy.types.Panel):
 
     name = wm.MPMaterials[wm.MPItemId].matName
     material = MM.MATERIALS[name]
-
-#    if name != "none":
-#      layout.template_preview(bpy.data.textures[material["fancyname"]], show_buttons=True)
 
     layout.template_list("UIList", "", wm, "MPMaterials", wm, "MPItemId")
 
@@ -161,7 +157,6 @@ class MaterialPanel(bpy.types.Panel):
       layout.label(text="Nothing is here")
 
   def check(self, context):
-    # MPItemIdUpdate(self, context)
     return True
 
 
